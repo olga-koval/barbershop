@@ -5,21 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- First we need to add Modern Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <!-- Then we add our styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
       <a class="link" href="">
-        <img src="./images/header/logo.png" alt="" width="66" height="56" />
+        <img src="./images/header/logo.png" alt="Лого" width="66" height="56" />
       </a>
-      <nav>
-        <ul>
+      <nav class="nav">
+        <ul class="list">
           <li><a class="link" href="#about-us">О нас</a></li>
           <li><a class="link" href="#prices">Услуги и цены</a></li>
           <li><a class="link" href="#team">Мастера</a></li>
           <li><a class="link" href="#contacts">Контакты</a></li>
         </ul>
-        <ul>
+        <ul class="list nav-contacts">
           <li>
             <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
           </li>
@@ -31,7 +44,7 @@
       <!--Hero-->
       <section class="hero">
         <div>
-          <ul>
+          <ul class="list sidebar">
             <li lang="en">
               <a
                 class="link"
@@ -53,9 +66,11 @@
           </ul>
         </div>
         <div>
-          <p class="uppertitle" lang="en">A hair salon for men in Kyiv</p>
-          <h1 lang="en">BarberShop</h1>
-          <p>
+          <p class="pretitle pretitle-light-mode" lang="en">
+            A hair salon for men in Kyiv
+          </p>
+          <h1 class="title hero-title" lang="en">BarberShop</h1>
+          <p class="txt hero-txt">
             Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
             со вкусом.
           </p>
@@ -87,18 +102,18 @@
             height="672"
           />
         </div>
-        <ul>
+        <ul class="list">
           <li>
-            <button type="button">Назад</button>
+            <button class="btn hero-btn-back" type="button">Назад</button>
           </li>
           <li>
-            <button type="button">Вперед</button>
+            <button class="btn hero-btn-forward" type="button">Вперед</button>
           </li>
         </ul>
       </section>
       <!--About us-->
       <section class="about" id="about-us">
-        <ul style="display: flex">
+        <ul class="list">
           <li>
             <img
               src="./images/about_us/cut_beard.jpeg"
@@ -117,34 +132,34 @@
           </li>
         </ul>
         <div>
-          <p class="uppertitle">о нас</p>
-          <h2>Лучший Барбершоп твоего города</h2>
-          <p>
+          <p class="pretitle pretitle-light-mode">о нас</p>
+          <h2 class="title title-light-mode">Лучший Барбершоп твоего города</h2>
+          <p class="about-txt">
             Если ты хочешь добавить в свой образ больше уверенности – тебе точно
             к нам.
           </p>
-          <p>
+          <p class="about-desc">
             Мы команда, которая никогда не останавливается на достигнутом и
             жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
             никогда не сможешь быть прежним. Мы команда, которая всегда с
             клиентами "на одной волне". Поэтому, мы всегда готовы
             усовершенствовать каждого, кто к нам приходит!
           </p>
-          <button type="button">онлайн-запись</button>
+          <button class="btn about-btn" type="button">онлайн-запись</button>
         </div>
       </section>
       <!--Prices-->
       <section class="prices" id="prices">
-        <p class="uppertitle">Проведи время в компании лучших мастеров</p>
-        <h2>Услуги и цены</h2>
+        <p class="pretitle">Проведи время в компании лучших мастеров</p>
+        <h2 class="title title-dark-mode">Услуги и цены</h2>
         <div>
-          <ul>
+          <ul class="list">
             <li><span>Мужская стрижка</span><span>от 300 грн.</span></li>
             <li><span></span>Стрижка бороды<span>от 200 грн.</span></li>
             <li><span></span>Стрижка усов<span>от 200 грн.</span></li>
             <li><span></span>Бритье опасной бритвой<span>от 200 грн.</span></li>
           </ul>
-          <ul>
+          <ul class="list">
             <li><span>Cтрижка у стажера</span><span>от 50 грн.</span></li>
             <li><span>Стрижка под насадку</span><span>от 200 грн.</span></li>
             <li>
@@ -153,7 +168,7 @@
             <li><span>Камуфлирование седины</span><span>от 200 грн.</span></li>
           </ul>
         </div>
-        <button type="button">онлайн-запись</button>
+        <button class="btn" type="button">онлайн-запись</button>
       </section>
       <!--Advantages-->
       <section class="advantages">
@@ -170,7 +185,7 @@
           </ul>
         </div>
         <div>
-          <ul>
+          <ul class="list">
             <li>
               <p>50<sup>+</sup></p>
               <p>Наград за отличный сервис</p>
@@ -182,8 +197,8 @@
           </ul>
         </div>
         <div>
-          <p class="uppertitle">старая традиционная школа</p>
-          <h2>старая традиционная школа</h2>
+          <p class="pretitle">старая традиционная школа</p>
+          <h2 class="title title-light-mode">Почему приходят именно к нам?</h2>
           <p>
             О нас говорят только хорошее. Но лучше 1 раз увидеть и
             прочувствовать, чем 10 раз прочитать.
@@ -193,10 +208,10 @@
       <!--Team-->
       <section class="team" id="team">
         <div>
-          <p class="uppertitle">для настоящих ценителей атмосферы</p>
-          <p>Наши мастера</p>
+          <p class="pretitle">для настоящих ценителей атмосферы</p>
+          <h2 class="title title-light-mode">Наши мастера</h2>
         </div>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./images/team/master_1.jpeg"
@@ -206,7 +221,7 @@
             />
             <h3 lang="en">John Smith</h3>
             <p lang="en">Extreme Barber</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a
                   class="link"
@@ -258,7 +273,7 @@
             />
             <h3 lang="en">Michele Doe</h3>
             <p lang="en">Extreme Barber</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a
                   class="link"
@@ -310,7 +325,7 @@
             />
             <h3 lang="en">Alan Black</h3>
             <p lang="en">Extreme Barber</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a
                   class="link"
@@ -357,9 +372,9 @@
       </section>
       <!--Gallery-->
       <section class="gallery">
-        <p class="uppertitle">на латинском языке “барба” означает “борода”</p>
+        <p class="pretitle">на латинском языке “барба” означает “борода”</p>
         <h2 hidden>Галерея</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./images/gallery/gallery1.jpeg"
@@ -399,17 +414,17 @@
         <div>
           <h2>Онлайн-запись</h2>
           <form>
-            <input type="text" name="" id="" placeholder="Имя*" />
-            <input type="tel" name="" id="" placeholder="Телефон*" />
+            <input type="text" name="name" id="" placeholder="Имя*" />
+            <input type="tel" name="tel" id="" placeholder="Телефон*" />
             <textarea
-              name=""
+              name="message"
               id=""
               cols="30"
               rows="10"
               placeholder="сообщение"
             ></textarea>
           </form>
-          <button type="submit">отправить</button>
+          <button class="btn" type="submit">отправить</button>
         </div>
         <div>
           <h2>Контакты</h2>
@@ -424,13 +439,13 @@
             >
           </address>
           <p>время работы</p>
-          <p>Ежедневно с <time>9:00</time> до <time>22:00</time></p>
+          <p>Ежедневно с <time>09:00</time> до <time>22:00</time></p>
         </div>
       </section>
     </main>
     <footer class="footer">
       <p>&copy; Copyright 2020</p>
-      <ul>
+      <ul class="list">
         <li>
           <a
             class="link"
