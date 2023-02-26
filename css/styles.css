@@ -10,22 +10,12 @@
     --secondary-txt--dark-mode: #FFFFFF;
     --additional-txt-dark-mode: rgba(157, 164, 189, 0.6);
     --primary-bgd--dark-mode: #191C26;
-    --secondary-bgd--dark-mode: 
 
     /* Light Mode */
     --primary-txt--light-mode: #555555;
     --secondary-txt--light-mode: #303030;
     --primary-bgd--light-mode: #FFFFFF;
     --secondary-bgd--light-mode: #F7F7F7;
-
-
-    /* --primary-txt-color: #555555;
-    --secondary-txt-color: #9DA4BD;
-    --primary-bgd-color: #FFFFFF;
-    --secondary-bgd-color: #F7F7F7;
-    --title-txt-light: #FFFFFF;
-    --title-txt-dark: #303030; */
-   
 }
 
 body {
@@ -91,7 +81,21 @@ background-color: #191C26;
 
 /* HERO */
 
-.sidebar {
+.line-dark {
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background-color: var(--secondary-txt--light-mode);
+}
+
+.line-light {
+    display: inline-block;
+    height: 1px;
+    width: 63px;
+    background-color: var(--additional-txt-dark-mode);
+}
+
+.social-nets {
     font-family: var(--primary-font);
     font-weight: 600;
     font-size: 11px;
@@ -129,7 +133,7 @@ background-color: #191C26;
 .txt {
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.66;
     letter-spacing: 0.02em;
 }
 
@@ -147,7 +151,13 @@ background-color: #191C26;
     text-transform: none;
 }
 
+/* ABOUT */
+
 .pretitle-light-mode {
+    color: var(--secondary-txt--light-mode);
+}
+
+.title-light-mode {
     color: var(--secondary-txt--light-mode);
 }
 
@@ -156,7 +166,7 @@ background-color: #191C26;
     font-size: 18px;
     line-height: 1.6;
     letter-spacing: 0.02em;
-    color: var(--primary-txt-color);
+    color: var(--primary-txt--light-mode);
 }
 
 .about-desc {
@@ -164,12 +174,114 @@ background-color: #191C26;
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.02em;
-    color: var(--primary-txt-color);
+    color: var(--primary-txt--light-mode);
 }
 
 .about-btn {
-    color: var(--title-txt-dark);
+    color: var(--secondary-txt--light-mode);
 }
 
+/* PRICES */
 
+.prices {
+    background-color: #303030;
+}
 
+.title-dark-mode {
+    color: var(--secondary-txt--dark-mode);
+}
+
+.prices-text {
+    color: var(--primary-txt--dark-mode);
+}
+
+/* ADVANTAGES */
+
+.advantages-number {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    letter-spacing: 0.05em;
+    color: var(--secondary-txt--light-mode);
+}
+
+.advantages-decor {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.37;
+    color: var(--accent-color);
+}
+
+.advantages-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    color: var(--secondary-txt--light-mode);
+}
+
+.advantages-pretitle {
+    color: var(--secondary-txt--light-mode);
+}
+
+.advantages-descr {
+    font-size: 18px;
+    line-height: 1.66;
+    color: var(--primary-txt--light-mode);
+}
+
+/* TEAM */
+
+.team {
+    background-color: var(--secondary-bgd--light-mode);
+}
+
+.team-pretitle {
+    color: var(--secondary-txt--light-mode);
+}
+
+.team-name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: 0.02em;
+    color: var(--secondary-txt--light-mode);
+}
+
+.team-profession {
+    line-height: 1.36;
+     color: #FF6C00;
+}
+
+/* CONTACTS */
+
+.contacts {
+    background-color: var(--primary-bgd--dark-mode);
+}
+
+.contacts-title {
+    color: var(--secondary-txt--dark-mode);
+}
+
+.contacts-btn {
+    color: var(--secondary-txt--dark-mode);
+}
+
+.contacts-address {
+    font-size: 18px;
+    line-height: 1.66;
+    color: var(--primary-txt--dark-mode);
+}
+
+.contacts-schedule {
+color: var(--secondary-txt--dark-mode);
+}
+
+/* FOOTER */
+
+.footer-copywrite {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--primary-txt--dark-mode);
+}
