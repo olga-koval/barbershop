@@ -51,12 +51,38 @@ h1, h2, h3, h4, h5, p {
 }
 
 .btn {
+    width: 100%;
+    max-width: 160px;
+    min-width: 100px;
+    min-height: 40px;
+    padding: 12px 12px;
+
     font-weight: 600;
     font-size: 12px;
     line-height: 1.3;
     letter-spacing: 0.09em;
     text-transform: uppercase;
+
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
     cursor: pointer;
+}
+
+.dark-mode-btn { 
+    color: var(--secondary-txt--dark-mode);
+    background-color: var(--secondary-txt--light-mode);
+}
+
+.light-mode-btn {
+    color: var(--secondary-txt--light-mode);
+    background-color: var(--primary-bgd--light-mode);
+}
+
+.btn:hover,
+.btn:focus {
+    color: var(--primary-bgd--light-mode);
+    background: var(--accent-color);
+    border: transparent;
 }
 
 .header,
@@ -81,6 +107,19 @@ img {
 .section {
     padding-top: 130px;
     padding-bottom: 130px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* NAVIGATION */
@@ -178,6 +217,11 @@ img {
 
 /* ABOUT */
 
+.about-right-side {
+    max-width: 500px;
+    outline: solid 1px red;
+}
+
 .pretitle-light-mode {
     color: var(--additional-txt-dark-mode);
 }
@@ -198,17 +242,13 @@ img {
 }
 
 .about-desc {
-    margin-bottom: 40px;
-    
+    margin-bottom: 39px;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.02em;
     color: var(--primary-txt--light-mode);
-}
-
-.about-btn {
-    color: var(--secondary-txt--light-mode);
 }
 
 /* PRICES */
@@ -222,8 +262,13 @@ img {
     color: var(--secondary-txt--dark-mode);
 }
 
-.prices-text {
+.prices-list {
+    margin-bottom: 50px;
     color: var(--primary-txt--dark-mode);
+}
+
+.price-inner-list {
+    width: 50%;
 }
 
 /* ADVANTAGES */
@@ -248,6 +293,11 @@ img {
     font-size: 11px;
     line-height: 1.36;
     color: var(--secondary-txt--light-mode);
+}
+
+.advantages-right-side {
+    max-width: 500px;
+    outline: 1px solid red;
 }
 
 .advantages-pretitle {
@@ -283,6 +333,12 @@ img {
      color: #FF6C00;
 }
 
+/* GALLERY */
+
+.gallery-pretitle {
+margin-bottom: 44px;
+}
+
 /* CONTACTS */
 
 .contacts {
@@ -295,6 +351,7 @@ img {
 
 .contacts-btn {
     color: var(--secondary-txt--dark-mode);
+    background-color: transparent;
 }
 
 .contacts-address {
